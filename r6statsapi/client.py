@@ -1,12 +1,13 @@
 import asyncio
-import aiohttp
-from enums import Platform
-from player import Player
 from typing import Optional
-import errors
 
+import aiohttp
 
-__all__ = "Client"
+from . import errors
+from .enums import Platform
+from .player import Player
+
+__all__ = ("Client")
 R6API_BASE = "https://api2.r6stats.com/public-api"
 
 

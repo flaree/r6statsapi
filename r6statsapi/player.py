@@ -1,5 +1,6 @@
-from enums import Platform
 from typing import Dict, List
+
+from .enums import Platform
 
 
 class Player:
