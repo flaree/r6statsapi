@@ -11,7 +11,14 @@ r6stats works with Python 3.7 or higher.
 Installing
 ----------
 
-You can get the library directly from PyPI. # SOON
+.. code-block:: sh:
+
+    # Linux/Mac
+    python3.7 -m pip install -U r6statsapi
+
+    # Windows
+    py -3.7 -m pip install -U r6statsapi
+
 
 Usage example
 -------------
