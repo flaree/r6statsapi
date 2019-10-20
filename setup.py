@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name="flare",
+    name="r6statsapi",
     version="0.0.1",
     author="flare",
     author_email="flare2399@gmail.com",
