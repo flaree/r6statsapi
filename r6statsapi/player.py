@@ -238,7 +238,7 @@ class Leaderboard:
         Leaderboard platform.
     region: `Regions`
         Leaderboard region
-    leaderboard:
+    leaderboard: list
         Leaderboard mapped to a list of dictionarys.
     """
 

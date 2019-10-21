@@ -18,6 +18,10 @@ All enumerations are subclasses of `enum.Enum`.
 .. autoclass:: r6statsapi.Platform
     :members:
 
+.. autoclass:: r6statsapi.Regions
+    :members:
+
+
 R6Stats API Models
 ------------------------
 
@@ -42,5 +46,8 @@ Models are classes that are received from R6Stats API.
     :members:
 
 .. automodule:: r6statsapi.weaponcategories
+    :members:
+
+.. automodule:: r6statsapi.leaderboard
     :members:
 

@@ -198,10 +198,12 @@ class Client:
 
         Paramaters
         ----------
-        player: str
-            Name of the player to search.
         platform: Platform
             Platform to search.
+        region: Regions
+            Region to search.
+        page: int
+            Page to search, max = 50.
 
 
         Returns
@@ -209,6 +211,8 @@ class Client:
         Leaderboard
             Requested player stats
         """
+        if page < 1 or page > 50:
+            page = 1
         endpoint = f"/leaderboard/{platform}/{region}?page={page}"
         data = await self._request(R6API_BASE + endpoint)
         gamemodes = Leaderboard(platform=platform, region=region, data=data)
