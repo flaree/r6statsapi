@@ -17,7 +17,7 @@ python3.7 -m pip install -U r6statsapi
 py -3.7 -m pip install -U r6statsapi
 ```
 
-To install the dev version, replace `rlapi` with `git+https://github.com/flareee/r6statsapi`
+To install the dev version, replace `r6statsapi` with `git+https://github.com/flareee/r6statsapi`
 ```py
 import r6statsapi
 import asyncio
