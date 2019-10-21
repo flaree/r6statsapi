@@ -4,8 +4,17 @@ from typing import Optional
 import aiohttp
 
 from . import errors
-from .enums import Platform
-from .player import Player, Queue, Gamemodes, Seasonal, Operators, WeaponCategories, Weapons
+from .enums import Platform, Regions
+from .player import (
+    Player,
+    Queue,
+    Gamemodes,
+    Seasonal,
+    Operators,
+    WeaponCategories,
+    Weapons,
+    Leaderboard,
+)
 
 __all__ = "Client"
 R6API_BASE = "https://api2.r6stats.com/public-api"
@@ -137,7 +146,7 @@ class Client:
         data = await self._request(R6API_BASE + endpoint)
         player = Player(platform=platform, data=data)
         return player
-    
+
     async def get_queue_stats(self, player: str, platform: Platform) -> Queue:
         """
         Get a players queue statistics.
@@ -175,16 +184,32 @@ class Client:
         -------
         Gamemodes
             Requested player stats
-
-        Raises
-        ------
-        HTTPException
-            HTTP request to Rocket League API failed.
-        PlayerNotFound
-            The player could not be found.
         """
         endpoint = f"/stats/{player}/{platform}/generic"
         data = await self._request(R6API_BASE + endpoint)
         gamemodes = Gamemodes(platform=platform, data=data)
         return gamemodes
-    
+
+    async def get_leaderboard(
+        self, platform: Platform, region: Regions = Regions.all, page: Optional[int] = 1
+    ) -> Leaderboard:
+        """
+        Get gamemode player statistics.
+
+        Paramaters
+        ----------
+        player: str
+            Name of the player to search.
+        platform: Platform
+            Platform to search.
+
+
+        Returns
+        -------
+        Leaderboard
+            Requested player stats
+        """
+        endpoint = f"/leaderboard/{platform}/{region}?page={page}"
+        data = await self._request(R6API_BASE + endpoint)
+        gamemodes = Leaderboard(platform=platform, region=region, data=data)
+        return gamemodes

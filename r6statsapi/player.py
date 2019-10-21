@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from .enums import Platform
+from .enums import Platform, Regions
 
 
 class Player:
@@ -45,6 +45,7 @@ class Player:
         self.queue_stats: Dict = self.all_stats.get("queue")
         self.gamemode_stats: Dict = self.all_stats.get("gamemode")
 
+
 class Operators:
     """"Operators()
     Represents R6 Player
@@ -72,6 +73,7 @@ class Operators:
         self.avatar_url_146: str = data.get("avatar_url_146", "")
         self.operators: Dict = data.get("operators", None)
 
+
 class Weapons:
     """"Weapons()
     Represents R6 Player
@@ -90,6 +92,7 @@ class Weapons:
         Player's weapons stats mapped to a dictionary.
 
     """
+
     def __init__(self, *, platform: Platform, data: Dict):
         self.name: str = data.get("username", "")
         self.username: str = self.name
@@ -97,6 +100,7 @@ class Weapons:
         self.avatar_url_256: str = data.get("avatar_url_256", "")
         self.avatar_url_146: str = data.get("avatar_url_146", "")
         self.weapons: Dict = data.get("weapons", None)
+
 
 class Seasonal:
     """"Seasonal()
@@ -116,6 +120,7 @@ class Seasonal:
         Player's seasonal stats mapped to a dictionary.
 
     """
+
     def __init__(self, *, platform: Platform, data: Dict):
         self.name: str = data.get("username", "")
         self.username: str = self.name
@@ -123,6 +128,7 @@ class Seasonal:
         self.avatar_url_256: str = data.get("avatar_url_256", "")
         self.avatar_url_146: str = data.get("avatar_url_146", "")
         self.seasons: Dict = data.get("seasons", None)
+
 
 class WeaponCategories:
     """"WeaponCategories()
@@ -142,6 +148,7 @@ class WeaponCategories:
         Player's weapon categort stats mapped to a dictionary.
 
     """
+
     def __init__(self, *, platform: Platform, data: Dict):
         self.name: str = data.get("username", "")
         self.username: str = self.name
@@ -149,6 +156,7 @@ class WeaponCategories:
         self.avatar_url_256: str = data.get("avatar_url_256", "")
         self.avatar_url_146: str = data.get("avatar_url_146", "")
         self.weapon_categories: Dict = data.get("categories", None)
+
 
 class Gamemodes:
     """"Gamemodes()
@@ -184,6 +192,7 @@ class Gamemodes:
         self.secure_area: Dict = self.gamemode_stats.get("secure_area")
         self.hostage: Dict = self.gamemode_stats.get("hostage")
 
+
 class Queue:
     """"Queue()
     Represents R6 Player
@@ -217,3 +226,23 @@ class Queue:
         self.casual: Dict = self.queue_stats.get("casual")
         self.ranked: Dict = self.queue_stats.get("ranked")
         self.other: Dict = self.queue_stats.get("other")
+
+
+class Leaderboard:
+    """"Leaderboard`()
+    Represents R6 Leaderboard
+
+    Attributes
+    ----------
+    platform: `Platform`
+        Leaderboard platform.
+    region: `Regions`
+        Leaderboard region
+    leaderboard:
+        Leaderboard mapped to a list of dictionarys.
+    """
+
+    def __init__(self, *, platform: Platform, region: Regions, data: Dict):
+        self.platform = platform
+        self.region = region
+        self.leaderboard = data
