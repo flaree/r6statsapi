@@ -20,13 +20,14 @@ py -3.7 -m pip install -U r6statsapi
 To install the dev version, replace `rlapi` with `git+https://github.com/flareee/r6statsapi`
 ```py
 import r6statsapi
+import asyncio
 
 
 loop = asyncio.get_event_loop()
 
 client = r6statsapi.Client('TOKEN')
 players = loop.run_until_complete(
-    client._get_weapon_stats("fiareee", Platform.uplay)
+    client.get_generic_stats("fiareee", Platform.uplay)
 )
 ```
 

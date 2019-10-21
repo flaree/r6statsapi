@@ -32,32 +32,39 @@ class Client:
 
     __del__ = destroy
 
-    async def _get_generic_stats(self, player: str, platform: Platform) -> Player:
+    async def get_generic_stats(self, player: str, platform: Platform) -> Player:
         """
         Get generic player statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
         Returns
         -------
         Player
             Requested player stats
+        
         """
         endpoint = f"/stats/{player}/{platform}/generic"
         data = await self._request(R6API_BASE + endpoint)
         player = Player(platform=platform, data=data)
         return player
 
-    async def _get_seasonal_stats(self, player: str, platform: Platform) -> Seasonal:
+    async def get_seasonal_stats(self, player: str, platform: Platform) -> Seasonal:
         """
         Get seasonal player statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
         Returns
         -------
         Season
@@ -68,14 +75,17 @@ class Client:
         player = Player(platform=platform, data=data)
         return player
 
-    async def _get_operators_stats(self, player: str, platform: Platform) -> Operators:
+    async def get_operators_stats(self, player: str, platform: Platform) -> Operators:
         """
         Get a players operator statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
         Returns
         -------
         Operators
@@ -86,14 +96,17 @@ class Client:
         player = Player(platform=platform, data=data)
         return player
 
-    async def _get_weapon_stats(self, player: str, platform: Platform) -> Weapons:
+    async def get_weapon_stats(self, player: str, platform: Platform) -> Weapons:
         """
         Get weapon player statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+        
         Returns
         -------
         Weapons
@@ -104,14 +117,17 @@ class Client:
         player = Player(platform=platform, data=data)
         return player
 
-    async def _get_weaponcategory_stats(self, player: str, platform: Platform) -> WeaponCategories:
+    async def get_weaponcategory_stats(self, player: str, platform: Platform) -> WeaponCategories:
         """
         Get a players weapin category statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
         Returns
         -------
         WeaponCategories
@@ -122,14 +138,17 @@ class Client:
         player = Player(platform=platform, data=data)
         return player
     
-    async def _get_queue_stats(self, player: str, platform: Platform) -> Queue:
+    async def get_queue_stats(self, player: str, platform: Platform) -> Queue:
         """
         Get a players queue statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
         Returns
         -------
         Queue
@@ -140,18 +159,29 @@ class Client:
         queues = Queue(platform=platform, data=data)
         return queues
 
-    async def _get_gamemode_stats(self, player: str, platform: Platform) -> Gamemodes:
+    async def get_gamemode_stats(self, player: str, platform: Platform) -> Gamemodes:
         """
         Get gamemode player statistics.
+
+        Paramaters
         ----------
         player: str
             Name of the player to search.
         platform: Platform
             Platform to search.
+
+
         Returns
         -------
         Gamemodes
             Requested player stats
+
+        Raises
+        ------
+        HTTPException
+            HTTP request to Rocket League API failed.
+        PlayerNotFound
+            The player could not be found.
         """
         endpoint = f"/stats/{player}/{platform}/generic"
         data = await self._request(R6API_BASE + endpoint)
