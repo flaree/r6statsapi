@@ -56,7 +56,7 @@ Exceptions
 
 The following exceptions are thrown by the library.
 
-.. automodule:: rlapi.errors
+.. automodule:: r6stats.errors
     :members:
     :show-inheritance:
 
