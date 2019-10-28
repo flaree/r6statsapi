@@ -11,3 +11,5 @@ from .player import Gamemodes as Gamemodes
 from .player import Leaderboard as Leaderboard
 from .errors import R6StatsApiException as R6StatsApiException
 from .errors import Unauthorized as Unauthorized
+
+__version__ = "0.1.5"
