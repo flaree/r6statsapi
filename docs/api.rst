@@ -56,7 +56,7 @@ Exceptions
 
 The following exceptions are thrown by the library.
 
-.. automodule:: r6stats.errors
+.. automodule:: r6statsapi.errors
     :members:
     :show-inheritance:
 
