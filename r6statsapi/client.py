@@ -81,8 +81,8 @@ class Client:
         """
         endpoint = f"/stats/{player}/{platform}/seasonal"
         data = await self._request(R6API_BASE + endpoint)
-        player = Seasonal(platform=platform, data=data)
-        return player
+        seasonal = Seasonal(platform=platform, data=data)
+        return seasonal
 
     async def get_operators_stats(self, player: str, platform: Platform) -> Operators:
         """
@@ -102,8 +102,8 @@ class Client:
         """
         endpoint = f"/stats/{player}/{platform}/operators"
         data = await self._request(R6API_BASE + endpoint)
-        player = Operators(platform=platform, data=data)
-        return player
+        operators = Operators(platform=platform, data=data)
+        return operators
 
     async def get_weapon_stats(self, player: str, platform: Platform) -> Weapons:
         """
@@ -123,8 +123,8 @@ class Client:
         """
         endpoint = f"/stats/{player}/{platform}/weapons"
         data = await self._request(R6API_BASE + endpoint)
-        player = Weapons(platform=platform, data=data)
-        return player
+        weapons = Weapons(platform=platform, data=data)
+        return weapons
 
     async def get_weaponcategory_stats(self, player: str, platform: Platform) -> WeaponCategories:
         """
@@ -144,8 +144,8 @@ class Client:
         """
         endpoint = f"/stats/{player}/{platform}/weapon-categories"
         data = await self._request(R6API_BASE + endpoint)
-        player = WeaponCategories(platform=platform, data=data)
-        return player
+        weaponcategories = WeaponCategories(platform=platform, data=data)
+        return weaponcategories
 
     async def get_queue_stats(self, player: str, platform: Platform) -> Queue:
         """
