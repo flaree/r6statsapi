@@ -45,7 +45,7 @@ autodoc_mock_imports = []
 try:
     import aiohttp
 except ImportError:
-    autodoc_mock_imports.append('astropy')
+    autodoc_mock_imports.append('aiohttp')
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
