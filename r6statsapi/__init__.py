@@ -17,3 +17,23 @@ from .errors import InternalError as InternalError
 
 __version__ = "0.1.6"
 __author__ = "Jamie (flare)"
+
+
+__all__ = (
+    "Client",
+    "Platform",
+    "Regions",
+    "Player",
+    "Queue",
+    "Seasonal",
+    "Operators",
+    "Weapons",
+    "WeaponCategories",
+    "Gamemodes",
+    "Leaderboard",
+    "R6StatsApiException",
+    "Unauthorized",
+    "PlayerNotFound",
+    "HTTPException",
+    "InternalError",
+)
