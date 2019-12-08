@@ -1,5 +1,6 @@
-import aiohttp
 from typing import Dict
+
+import aiohttp
 
 __all__ = ("R6StatsApiException", "Unauthorized", "InternalError", "PlayerNotFound", "HTTPException")
 

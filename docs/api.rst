@@ -23,32 +23,32 @@ All enumerations are subclasses of `enum.Enum`.
 
 
 R6Stats API Models
-------------------------
+------------------
 
 Models are classes that are received from R6Stats API.
 
-.. automodule:: r6statsapi.player
+.. automodule:: r6statsapi.Player
     :members:
 
-.. automodule:: r6statsapi.operator
+.. automodule:: r6statsapi.Operators
     :members:
 
-.. automodule:: r6statsapi.queue
+.. automodule:: r6statsapi.Queue
     :members:
 
-.. automodule:: r6statsapi.weapons
+.. automodule:: r6statsapi.Weapons
     :members:
 
-.. automodule:: r6statsapi.seasonal
+.. automodule:: r6statsapi.Seasonal
     :members:
 
-.. automodule:: r6statsapi.gamemodes
+.. automodule:: r6statsapi.Gamemodes
     :members:
 
-.. automodule:: r6statsapi.weaponcategories
+.. automodule:: r6statsapi.WeaponCategories
     :members:
 
-.. automodule:: r6statsapi.leaderboard
+.. automodule:: r6statsapi.Leaderboard
     :members:
 
 
