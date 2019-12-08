@@ -75,6 +75,11 @@ html_static_path = ["_static"]
 # -- Options for extensions -----------------------------------------------
 
 # Intersphinx
+intersphinx_mapping = {
+    "python": ("https://docs.python.org/3/", None),
+    "aiohttp": ("https://docs.aiohttp.org/en/stable/", None),
+}
+
 # autodoc
 autodoc_member_order = "bysource"
 autodoc_typehints = "none"
