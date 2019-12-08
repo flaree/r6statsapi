@@ -22,18 +22,6 @@ project = "r6statsapi"
 copyright = "2019, flare"
 author = "flare"
 
-# The version info for the project you're documenting, acts as replacement for
-# |version| and |release|, also used in various other places throughout the
-# built documents.
-#
-# pylint: disable=wrong-import-position
-__version__ = "0.0.1"
-# The short X.Y version.
-version = __version__
-
-# The full version, including alpha/beta/rc tags.
-release = __version__
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
