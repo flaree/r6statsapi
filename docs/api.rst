@@ -50,3 +50,13 @@ Models are classes that are received from R6Stats API.
 
 .. automodule:: r6statsapi.leaderboard
     :members:
+
+
+Exceptions
+----------
+
+The following exceptions are thrown by the library.
+
+.. automodule:: r6apistats.errors
+    :members:
+    :show-inheritance:
