@@ -23,7 +23,7 @@ All enumerations are subclasses of `enum.Enum`.
 
 
 R6Stats API Models
-------------------------
+------------------
 
 Models are classes that are received from R6Stats API.
 
