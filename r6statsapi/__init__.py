@@ -11,5 +11,8 @@ from .player import Gamemodes as Gamemodes
 from .player import Leaderboard as Leaderboard
 from .errors import R6StatsApiException as R6StatsApiException
 from .errors import Unauthorized as Unauthorized
+from .errors import PlayerNotFound as PlayerNotFound
+from .errors import HTTPException as HTTPException
+from .errors import InternalError as InternalError
 
-__version__ = "0.1.5"
+__version__ = "0.1.5a"

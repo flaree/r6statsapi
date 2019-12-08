@@ -33,8 +33,11 @@ class Client:
                 return data
             if resp.status == 401:
                 raise errors.Unauthorized()
-            else:
-                raise errors.R6StatsApiException()
+            if resp.status == 400:
+                raise errors.PlayerNotFound()
+            if resp.status in [500, 502]:
+                raise errors.InternalError()
+            raise errors.HTTPException(resp, data)
 
     def destroy(self) -> None:
         self._session.detach()
