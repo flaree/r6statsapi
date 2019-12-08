@@ -16,3 +16,4 @@ from .errors import HTTPException as HTTPException
 from .errors import InternalError as InternalError
 
 __version__ = "0.1.6"
+__author__ = "Jamie (flare)"

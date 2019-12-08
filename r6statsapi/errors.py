@@ -1,6 +1,7 @@
 import aiohttp
 from typing import Dict
 
+__all__ = ("R6StatsApiException", "Unauthorized", "InternalError", "PlayerNotFound", "HTTPException")
 
 class R6StatsApiException(Exception):
     """Base exception class for R6Stats API."""
