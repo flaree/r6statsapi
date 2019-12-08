@@ -22,6 +22,11 @@ project = "r6statsapi"
 copyright = "2019, flare"
 author = "flare"
 
+from r6statsapi import __version__
+
+version = __version__
+relase = __version__
+
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
