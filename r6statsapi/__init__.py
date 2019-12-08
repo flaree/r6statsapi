@@ -15,4 +15,4 @@ from .errors import PlayerNotFound as PlayerNotFound
 from .errors import HTTPException as HTTPException
 from .errors import InternalError as InternalError
 
-__version__ = "0.1.5a"
+__version__ = "0.1.6"
