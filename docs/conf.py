@@ -34,13 +34,18 @@ relase = __version__
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.napoleon",
     "sphinx.ext.viewcode",
     "sphinxcontrib_trio",
 ]
 
-autodoc_mock_imports = ['aiohttp']
+autodoc_mock_imports = []
+try:
+    import aiohttp
+except ImportError:
+    autodoc_mock_imports.append('astropy')
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ["_templates"]
 
