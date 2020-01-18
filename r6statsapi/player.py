@@ -2,7 +2,17 @@ from typing import Dict, List
 
 from .enums import Platform, Regions
 
-__all__ = ("Player", "Operators", "Weapons", "Seasonal", "WeaponCategories", "Gamemodes", "Queue", "Leaderboard")
+__all__ = (
+    "Player",
+    "Operators",
+    "Weapons",
+    "Seasonal",
+    "WeaponCategories",
+    "Gamemodes",
+    "Queue",
+    "Leaderboard",
+)
+
 
 class Player:
     """"Player()

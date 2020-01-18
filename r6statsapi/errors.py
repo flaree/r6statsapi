@@ -2,7 +2,14 @@ from typing import Dict
 
 import aiohttp
 
-__all__ = ("R6StatsApiException", "Unauthorized", "InternalError", "PlayerNotFound", "HTTPException")
+__all__ = (
+    "R6StatsApiException",
+    "Unauthorized",
+    "InternalError",
+    "PlayerNotFound",
+    "HTTPException",
+)
+
 
 class R6StatsApiException(Exception):
     """Base exception class for R6Stats API."""

@@ -5,8 +5,16 @@ import aiohttp
 
 from . import errors
 from .enums import Platform, Regions
-from .player import (Gamemodes, Leaderboard, Operators, Player, Queue,
-                     Seasonal, WeaponCategories, Weapons)
+from .player import (
+    Gamemodes,
+    Leaderboard,
+    Operators,
+    Player,
+    Queue,
+    Seasonal,
+    WeaponCategories,
+    Weapons,
+)
 
 __all__ = ("Client",)
 R6API_BASE = "https://api2.r6stats.com/public-api"
