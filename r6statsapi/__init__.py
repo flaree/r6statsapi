@@ -15,7 +15,7 @@ from .player import Seasonal as Seasonal
 from .player import WeaponCategories as WeaponCategories
 from .player import Weapons as Weapons
 
-__version__ = "0.1.6"
+__version__ = "0.1.7"
 __author__ = "Jamie (flare)"
 
 

@@ -12,7 +12,7 @@ class Platform(Enum):
     #: The Playstation Network
     psn = "psn"  # playstation
     #: XBox Live
-    xbox = "xbx"  # xbox
+    xbox = "xbl"  # xbox
 
     def __str__(self) -> str:
         return self.value
