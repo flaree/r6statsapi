@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath(".."))
 # -- Project information -----------------------------------------------------
 
 project = "r6statsapi"
-copyright = "2019, flare"
+copyright = "2019-2020, flare"
 author = "flare"
 
 from r6statsapi import __version__
