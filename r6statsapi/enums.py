@@ -37,7 +37,7 @@ class Regions(Enum):
 
     eu = emea
     na = ncsa
-    apac = apac
+    asia = apac
 
     def __str__(self) -> str:
         return self.value
