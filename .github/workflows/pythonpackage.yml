@@ -32,4 +32,4 @@ jobs:
     - name: Style with black
       run: |
         pip install black
-        black --check -l 88 `git ls-files "*.py"`
+        black --check -l 99 `git ls-files "*.py"`
