@@ -4,20 +4,29 @@ __all__ = ("Platform", "Regions")
 
 
 class Platform(Enum):
-    """Platform names."""
+    """Platform names.
+    
+    .. container:: operations
+        ``str(x)``
+            Returns platform's friendly name, e.g. "Xbox Live"
+    """
 
     value: str
     #: UPlay/PC Network
-    uplay = "uplay"  # pc
+    uplay = "PC"  # pc
+
     #: The Playstation Network
-    psn = "psn"  # playstation
+    psn = "Playstation Network"  # playstation
+
     #: Xbox Live
-    xbox = "xbl"  # xbox
+    xbox = "Xbox Live"  # xbox
 
     #: Alias of xbox
     xbl = xbox
+
     #: Alias of psn
     ps4 = psn
+
     #: Alias of uplay
     pc = uplay
 
@@ -26,17 +35,25 @@ class Platform(Enum):
 
 
 class Regions(Enum):
-    """R6Stats Regions."""
+    """R6Stats Regions.
+
+    .. container:: operations
+        ``str(x)``
+            Returns platform's friendly name, e.g. "Xbox Live"
+    """
 
     value: str
     #: All Regions
-    all = "all"
+    all = "All Regions"
+
     #: North America
-    ncsa = "ncsa"
+    ncsa = "North America"
+
     #: Europe
-    emea = "emea"
+    emea = "Europe"
+
     #: Asia
-    apac = "apac"
+    apac = "Asia"
 
     #: Alias of emea
     eu = emea
