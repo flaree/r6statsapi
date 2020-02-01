@@ -6,9 +6,6 @@ __all__ = ("Platform", "Regions")
 class Platform(Enum):
     """Platform names.
     
-    .. container:: operations
-        ``str(x)``
-            Returns platform's friendly name, e.g. "Xbox Live"
     """
 
     value: str
@@ -37,9 +34,6 @@ class Platform(Enum):
 class Regions(Enum):
     """R6Stats Regions.
 
-    .. container:: operations
-        ``str(x)``
-            Returns platform's friendly name, e.g. "Xbox Live"
     """
 
     value: str
