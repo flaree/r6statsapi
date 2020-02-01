@@ -15,10 +15,10 @@ from being stringly typed in case the strings change in the future.
 
 All enumerations are subclasses of `enum.Enum`.
 
-.. autoclass:: r6statsapi.Platform
+.. autoclass:: r6statsapi.platform
     :members:
 
-.. autoclass:: r6statsapi.Regions
+.. autoclass:: r6statsapi.regions
     :members:
 
 
@@ -27,28 +27,28 @@ R6Stats API Models
 
 Models are classes that are received from R6Stats API.
 
-.. automodule:: r6statsapi.Player
+.. automodule:: r6statsapi.player
     :members:
 
-.. automodule:: r6statsapi.Operators
+.. automodule:: r6statsapi.operators
     :members:
 
-.. automodule:: r6statsapi.Queue
+.. automodule:: r6statsapi.queue
     :members:
 
-.. automodule:: r6statsapi.Weapons
+.. automodule:: r6statsapi.weapons
     :members:
 
-.. automodule:: r6statsapi.Seasonal
+.. automodule:: r6statsapi.seasonal
     :members:
 
-.. automodule:: r6statsapi.Gamemodes
+.. automodule:: r6statsapi.gamemodes
     :members:
 
-.. automodule:: r6statsapi.WeaponCategories
+.. automodule:: r6statsapi.weaponCategories
     :members:
 
-.. automodule:: r6statsapi.Leaderboard
+.. automodule:: r6statsapi.leaderboard
     :members:
 
 
