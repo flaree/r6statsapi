@@ -15,10 +15,10 @@ from being stringly typed in case the strings change in the future.
 
 All enumerations are subclasses of `enum.Enum`.
 
-.. autoclass:: r6statsapi.platform
+.. autoclass:: r6statsapi.Platform
     :members:
 
-.. autoclass:: r6statsapi.regions
+.. autoclass:: r6statsapi.Regions
     :members:
 
 
