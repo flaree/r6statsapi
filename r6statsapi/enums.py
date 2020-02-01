@@ -14,6 +14,10 @@ class Platform(Enum):
     #: XBox Live
     xbox = "xbl"  # xbox
 
+    xbl = xbox
+    ps4 = psn
+    pc = uplay
+
     def __str__(self) -> str:
         return self.value
 
@@ -30,6 +34,10 @@ class Regions(Enum):
     emea = "emea"
     #: Asia
     apac = "apac"
+
+    eu = emea
+    na = ncsa
+    apac = apac
 
     def __str__(self) -> str:
         return self.value
