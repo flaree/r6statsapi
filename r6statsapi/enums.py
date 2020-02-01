@@ -11,11 +11,14 @@ class Platform(Enum):
     uplay = "uplay"  # pc
     #: The Playstation Network
     psn = "psn"  # playstation
-    #: XBox Live
+    #: Xbox Live
     xbox = "xbl"  # xbox
 
+    #: Alias of xbox
     xbl = xbox
+    #: Alias of psn
     ps4 = psn
+    #: Alias of uplay
     pc = uplay
 
     def __str__(self) -> str:
@@ -35,8 +38,11 @@ class Regions(Enum):
     #: Asia
     apac = "apac"
 
+    #: Alias of emea
     eu = emea
+    #: Alias of ncsa
     na = ncsa
+    #: Alias of asia
     asia = apac
 
     def __str__(self) -> str:
