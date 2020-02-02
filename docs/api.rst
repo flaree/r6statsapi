@@ -15,6 +15,8 @@ from being stringly typed in case the strings change in the future.
 
 All enumerations are subclasses of `enum.Enum`.
 
+Each class has a str() method which will return a friendly version of the enum.
+
 .. autoclass:: r6statsapi.Platform
     :members:
 
