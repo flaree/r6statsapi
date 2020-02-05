@@ -36,5 +36,5 @@ Here's simple example showing how you can get player stats with this library:
 
     client = r6statsapi.Client("TOKEN")
     players = loop.run_until_complete(
-        client.get_generic_stats('fiareee', r6statsAPI.Platform.uplay)
+        client.get_generic_stats('flareee', r6statsAPI.Platform.uplay)
     )
