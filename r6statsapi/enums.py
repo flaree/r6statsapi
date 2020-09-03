@@ -13,13 +13,13 @@ class Platform(Enum):
 
     value: str
     #: UPlay/PC Network
-    uplay = "PC"  # pc
+    uplay = "UPLAY"  # pc
 
     #: The Playstation Network
-    psn = "Playstation Network"  # playstation
+    psn = "PSN"  # playstation
 
     #: Xbox Live
-    xbox = "Xbox Live"  # xbox
+    xbox = "XBL"  # xbox
 
     #: Alias of xbox
     xbl = xbox
