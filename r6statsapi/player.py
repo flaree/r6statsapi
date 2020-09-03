@@ -15,7 +15,7 @@ __all__ = (
 
 
 class Player:
-    """"Player()
+    """ "Player()
     Represents R6 Player
 
     Attributes
@@ -58,7 +58,7 @@ class Player:
 
 
 class Operators:
-    """"Operators()
+    """ "Operators()
     Represents R6 Player
 
     Attributes
@@ -86,7 +86,7 @@ class Operators:
 
 
 class Weapons:
-    """"Weapons()
+    """ "Weapons()
     Represents R6 Player
 
     Attributes
@@ -114,7 +114,7 @@ class Weapons:
 
 
 class Seasonal:
-    """"Seasonal()
+    """ "Seasonal()
     Represents R6 Player
 
     Attributes
@@ -142,7 +142,7 @@ class Seasonal:
 
 
 class WeaponCategories:
-    """"WeaponCategories()
+    """ "WeaponCategories()
     Represents R6 Player
 
     Attributes
@@ -170,7 +170,7 @@ class WeaponCategories:
 
 
 class Gamemodes:
-    """"Gamemodes()
+    """ "Gamemodes()
     Represents R6 Player
 
     Attributes
@@ -205,7 +205,7 @@ class Gamemodes:
 
 
 class Queue:
-    """"Queue()
+    """ "Queue()
     Represents R6 Player
 
     Attributes
@@ -240,7 +240,7 @@ class Queue:
 
 
 class Leaderboard:
-    """"Leaderboard`()
+    """ "Leaderboard`()
     Represents R6 Leaderboard
 
     Attributes

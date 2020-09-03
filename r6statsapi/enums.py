@@ -5,7 +5,7 @@ __all__ = ("Platform", "Regions")
 
 class Platform(Enum):
     """Platform names.
-    
+
     .. container:: operations
         ``str(x)``
             Returns platform's friendly name, e.g. "Xbox Live"

@@ -59,7 +59,7 @@ class Client:
         -------
         Player
             Requested player stats
-        
+
         """
         endpoint = f"/stats/{player}/{platform}/generic"
         data = await self._request(R6API_BASE + endpoint)
@@ -118,7 +118,7 @@ class Client:
             Name of the player to search.
         platform: Platform
             Platform to search.
-        
+
         Returns
         -------
         Weapons

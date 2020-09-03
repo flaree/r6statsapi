@@ -17,7 +17,7 @@ class R6StatsApiException(Exception):
 
 class Unauthorized(R6StatsApiException):
     """Exception that's thrown when status code 401 occurs.
-    
+
     Invalid token."""
 
 
